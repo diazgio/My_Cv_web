@@ -79,6 +79,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .hero-image {
@@ -103,6 +104,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .project strong {
@@ -118,18 +120,20 @@ h2 {
     font-size: 20px;
 }
 
-.project-details1 {
-    width: 500px;
+.project-details {
+    width: 50%;
 }
 
 .project-imageContainer {
-    width: 500px;
+    width: 50%;
 }
 
-.project-details2 {
-    width: 500px;
+.project-imageContainer img {
+    max-width: 100%;
 
 }
+
+
 
 .header {
     background-color: #1b2127;
@@ -138,6 +142,7 @@ h2 {
     justify-content: space-between;
     height: 70px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .menu {
@@ -211,6 +216,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .contact {
@@ -220,6 +226,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer img {
@@ -281,11 +288,78 @@ h2 {
 }
 
 .container {
-    width: 1000px;
+    max-width: 1000px;
+    flex: 1;
     margin: 0px auto;
     display: inherit;
     justify-content: inherit;
     align-items: inherit;
     height: inherit;
     flex-wrap: inherit;
+}
+
+@media screen and (max-width: 1024px){
+
+}
+
+
+
+@media screen and (max-width: 767px){
+    .header{
+        display: block;
+        height: auto;
+    }
+    .header ol {
+        display: initial;
+    }
+    .header a {
+        justify-content: center;
+    }
+    .header ol li {
+        height: 50px;
+        text-align: center;
+    }
+    .header .logo{
+        text-align: center;
+    }
+    .project{
+        display: block;
+    }
+
+    .project-details{
+        width: auto;
+        font-size: 16px;
+    }
+    .project-imageContainer{
+        width: auto;
+        text-align: center;
+    }
+
+    .project-title{
+        font-size: 1.7em;
+        margin: .4em 0;
+    }
+    .project-job{
+        font-size: 1.5em;
+        margin: .4em 0;
+    }
+    .project-date{
+        font-size: .8em;
+        margin: .4em 0;
+    }
+    .project-description{
+        font-size: .9em;
+        margin: .4em 0;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .project-details{
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 320px){
+
 }
