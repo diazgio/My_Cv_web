@@ -1,0 +1,291 @@
+/*reglas
+selectores
+declaraciones
+propiedades
+valores*/
+/* selector de etiqueta*/
+/*
+header {
+    background: brown;
+}
+*/
+
+/*selector descendente*/
+/*body header nav ol li a */
+
+/*selector de clase*/
+/* .link */
+
+/*selector de id #*/
+
+/* #portafolio */
+
+/* gris oscuro: #1d252c , gris claro= #6266262, celeste = #026fff
+*/
+ol,
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+figure {
+    margin: 0px;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    margin: 0px;
+}
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 35px;
+    line-height: 1.5em;
+    font-weight: bold;
+    letter-spacing: -.2px;
+    text-transform: capitalize;
+    color: white;
+    margin: 0px;
+}
+
+h1 strong{
+    color: #026fff;
+}
+
+h2 {
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 40px;
+}
+.hero {
+    height: 300px;
+    /*background-image: url('../imagenes/hero1.jpg');*/
+    background-color: #1b2127;
+   /* background-size: 500px 300px;
+    background-repeat: no-repeat;
+    background-position-x: right;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-image {
+    object-fit: cover;
+}
+
+.portfolio{
+    background: #fafafa;
+    padding: 20px;
+}
+
+.project {
+   /* border-top: 10px solid green;
+    border-right: 10px solid green;
+    border-left: 10px solid green;
+    border-bottom: 10px solid green;*/
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project strong {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.project-title {
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.project-description{
+    font-size: 20px;
+}
+
+.project-details1 {
+    width: 500px;
+}
+
+.project-imageContainer {
+    width: 500px;
+}
+
+.project-details2 {
+    width: 500px;
+
+}
+
+.header {
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+
+.menu {
+    height: inherit;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.header ol {
+    display: flex;
+    height: inherit;
+}
+
+.header ol li {
+    height: inherit;
+}
+
+.event-list-title {
+    margin: 20px;
+}
+.event-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.event {
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 10px;
+    width: 480px;
+    flex-shrink: 0;
+    overflow: hidden;
+    background: #f4fbff;
+}
+
+.event-image {
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-details {
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.event-description {
+    text-align: left;
+}
+
+.event-url {
+    border: 1px solid #056fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #056fff;
+    border-radius: 5px;
+}
+.footer {
+    color: white;
+    background: #1b2127;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact {
+    background-color: #056fff;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer img {
+    vertical-align: middle;
+}
+
+.social{
+}
+
+.social-link { 
+    display: inline-block;
+    width: 50px;
+    height: 50px;;
+    background-size: 50px 50px;
+    margin: 0px 10px;
+}
+
+.social-link.twitter {
+    background-image: url('../imagenes/twitter.svg');
+}
+
+.social-link.facebook {
+    background-image: url('../imagenes/facebook.svg');
+}
+
+.social-link.github {
+    background-image: url('../imagenes/github.svg');
+}
+
+.social-link.instagram {
+    background-image: url('../imagenes/instagram.svg');
+}
+
+
+.form-email input {
+    border-color: grey;
+    padding: 10px 20px 10px 25px;
+    background-image: url('../imagenes/email.svg');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.form-email button {
+    display: block;
+    padding: 10px 0px;
+    background: transparent;
+    color: white;
+    width: 100px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.form-email h3 {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.container {
+    width: 1000px;
+    margin: 0px auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
