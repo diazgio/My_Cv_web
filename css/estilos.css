@@ -177,8 +177,8 @@ h2 {
 .event {
     border: 1px solid gray;
     border-radius: 10px;
-    margin: 10px;
-    width: 480px;
+    margin: 1%;
+    width: 48%;
     flex-shrink: 0;
     overflow: hidden;
     background: #f4fbff;
@@ -350,6 +350,9 @@ h2 {
     .project-description{
         font-size: .9em;
         margin: .4em 0;
+    }
+    .event{
+        width: auto;
     }
 }
 
