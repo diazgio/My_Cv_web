@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <i class="icon-menu burger-button"></i>
+        <i class="icon-menu burger-button" id="burgerMenu"></i>
         <header class="header">
             <div class="container">
                 <figure class="logo">
@@ -114,5 +114,19 @@
                 </div>
             </div>
         </footer>
+        <script>
+           const menu = document.querySelector('.menu');
+           console.log(menu);
+           const burgerButton = document.querySelector('#burgerMenu');
+           console.log(burgerButton); 
+            burgerButton.addEventListener('click', showHide)
+            function showHide(){
+                if(menu.classList.contains('is-active')){
+                    menu.classList.remove('is-active');
+                }else {
+                    menu.classList.add('is-active');
+                }  
+            }
+        </script>
     </body>
 </html>
