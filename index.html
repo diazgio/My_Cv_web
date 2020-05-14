@@ -101,7 +101,7 @@
                 </form>
                 <div class="social">
                     <a href="https://twitter.com/giordano_diaz" class="social-link twitter"><i class="icon-twitter"></i></a>
-                    <a href="https://web.facebook.com/GiorDiaz93" class="social-link facebook"><i class="icon-facebook2"></i></a>
+                    <a href="https://facebook.com/GiorDiaz93" class="social-link facebook"><i class="icon-facebook2"></i></a>
                     <a href="https://github.com/diazgio" class="social-link github"><i class="icon-github"></i></a>
                     <a href="https://www.instagram.com/giodiaz26" class="social-link instagram"><i class="icon-instagram"></i></a>
                 </div>
@@ -116,10 +116,17 @@
         </footer>
         <script>
            const menu = document.querySelector('.menu');
-           console.log(menu);
+           const ipad = window.matchMedia('screen and (max-width:767px)');
            const burgerButton = document.querySelector('#burgerMenu');
-           console.log(burgerButton); 
-            burgerButton.addEventListener('click', showHide)
+            
+            ipad.addListener(validation);
+            function validation(event){
+                if(event.matches){
+                    burgerButton.addEventListener('click', showHide)
+                }else{
+                    burgerButton.removeEventListener('click', showHide) 
+                }
+            }
             function showHide(){
                 if(menu.classList.contains('is-active')){
                     menu.classList.remove('is-active');
