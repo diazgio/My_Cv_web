@@ -518,6 +518,9 @@ h2 {
     h1{
         font-size: 1.2em;
     }
+    h2 {
+        font-size: 1em;
+    }
     .hero{
         padding: 2em 1em;
     }
