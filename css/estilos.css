@@ -364,7 +364,10 @@ h2 {
       top: 5px;
       color: white;
   }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1023px){
+    .event-list-title{
+        margin-left: 0;
+    }
     .portfolio{
         padding: 0;
     }
@@ -401,6 +404,7 @@ h2 {
     }
     h2 {
         font-size: 1.2em;
+        margin: .5em 0;
     }
     .burger-button{
         display: block;
@@ -513,6 +517,11 @@ h2 {
         display: block;
         text-align: center;
         border: 1px solid transparent;
+    }
+    .social-link{
+        width: 40px;
+        height: 40px;
+        background-size: 100%;
     }
 }
 
