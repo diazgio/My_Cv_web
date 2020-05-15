@@ -464,7 +464,7 @@ h2 {
         margin: .4em 0;
     }
     .project-description{
-        font-size: .9em;
+        font-size: 1em;
         margin: .4em 0;
     }
     .event{
@@ -485,7 +485,7 @@ h2 {
         font-size: 1.5em;
     }
     .project-details{
-        font-size: 12px;
+        font-size: 14px;
     }
     .event-details{
         margin: -10px 10px 10px 10px;
