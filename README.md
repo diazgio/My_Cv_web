@@ -2,7 +2,7 @@
 
 > This is a solo project creating a CV web, as part of the program of PLATZI in the courses of HTML and CSS3.
 
-![screenshot](./img/screen-shot.PNG)
+![screenshot](./imagenes/screen-shot.PNG)
 
 
 ## 🔧 Built With
